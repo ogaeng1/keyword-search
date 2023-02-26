@@ -35,6 +35,13 @@
     height: 80%;
     overflow-x: hidden;
     overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(#5d88ff, #5d59ce);
+        border-radius: 25px;
+    }
 }
 
 #places-list {
@@ -57,9 +64,7 @@
                 font-size: 0.75rem;
                 color: #fff;
                 text-align: center;
-                background: url('../../public/images/spot.png') center center no-repeat;
-                background-size: 50px auto;
-                color: blue;
+                color: black;
             }
         }
         a {
