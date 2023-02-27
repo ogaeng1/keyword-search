@@ -21,10 +21,12 @@ const Search = () => {
     return (
         <div className="search-map">
             <form onSubmit={onSubmitKeyWord}>
-                <input type="text" placeholder="검색할 키워드를 입력해 주세요(예: 데이트 코스)" onChange={onChangeKeyWord} />
-                {value === "" ? <button type="submit" disabled>🔍</button> : <button type="submit" className="able">🔍</button> }
+                <label>
+                    <input type="text" placeholder="검색할 키워드를 입력해 주세요(예: 데이트 코스)" onChange={onChangeKeyWord} />
+                    {value === "" ? <button type="submit" disabled className="search-btn">🔍</button> : <button type="submit" className="able search-btn">🔍</button> }
+                </label>
             </form>
-            <Map search={keyWord} /> 
+            <Map search={keyWord} />
         </div>
     );
 }

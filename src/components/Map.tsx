@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { searchProps } from './Search';
+import ModeToggle from './ModeToggle';
 import "../styles/map.scss";
 
 declare global {
@@ -112,7 +113,7 @@ const Map = (props: searchProps) => {
           <span class="marker marker_${index+1}">
             ${index+1}
           </span>
-          <a href="${places.place_url}">
+          <a href="${places.place_url}" target="_blank">
             <h5 class="info-item place-name">${places.place_name}</h5>
             ${
               places.road_address_name 
