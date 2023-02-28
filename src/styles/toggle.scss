@@ -1,0 +1,67 @@
+@import "./theme.scss";
+@import "../styles/utils.scss";
+
+.toggle-wrap {
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    @include md {
+        width: 55%;
+    }
+    @include xl {
+        width: 35%;
+    }
+    .toggle, .toggle-on {
+        width: 20%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: var(--color-toggleBg);
+        display: flex;
+        align-items: center;
+        padding: 0px 5px;
+        cursor: pointer;
+        position: relative;
+        span {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 0 5px black;
+            position: fixed;
+        }
+        @include lg {
+            width: 15%;
+        }
+    }
+    .toggle {
+        span {
+            transform: translate(0, 0);
+            transition: 0.3s ease-in-out;
+        }
+    }
+    .toggle-on {
+        span {
+            transform: translate(100%, 0);
+            transition: 0.3s ease-in-out;
+            @include md {
+                transform: translate(45px, 0);
+            }
+            @include lg {
+                transform: translate(45px, 0);
+            }
+            @include xl {
+                transform: translate(30px, 0);
+            }
+            @include xxl {
+                transform: translate(60px, 0);
+            }
+        }
+    }
+}
+

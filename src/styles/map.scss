@@ -1,7 +1,10 @@
+@import "./theme.scss";
+@import "../styles/utils.scss";
+
 .container {
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid var(--color-border);
 }
 
 #map {
@@ -20,14 +23,15 @@
     font-size: 24px;
     font-weight: bold;
     padding: 10px;
-    background-color: #c4d5dc;
+    background-color: var(--color-pagination);
     display: flex;
     align-items: center;
+    color: var(--color-text);
 }
 
 .result-keyword {
     margin-right: 5px;
-    color: rgb(20, 51, 204);
+    color: var(--color-keywordColor);
 }
 
 .scroll-wrapper {
@@ -48,7 +52,7 @@
     width: 100%;
     height: 60px;
     .item {
-        background-color: #fff;
+        background-color: var(--color-listColor);
         .info {
             position: relative;
             padding-left: 3rem;
@@ -62,15 +66,18 @@
                 padding-top: 5px;
                 font-weight: 700;
                 font-size: 0.75rem;
-                color: #fff;
+                color: var(--color-marker);
                 text-align: center;
-                color: black;
             }
         }
         a {
             display: block;
             padding: 0.5rem;
             text-decoration: none;
+            color: var(--color-text);
+            &:visited {
+                color: var(--color-text);
+            }
             .info-item {
                 display: block;
                 font-size: 0.6876rem;
@@ -89,10 +96,10 @@
                     left: 0;
                     top: 2px;
                     font-size: 0.625rem;
-                    color: #fff;
+                    color: var(--color-text);
                     text-align: center;
                     line-height: 14px;
-                    background-color: #bbb;
+                    background-color: var(--color-background);
                     border-radius: 4px;
                     width: 22px;
                     height: 14px;
@@ -100,7 +107,7 @@
             }
             .tel {
                 margin-top: 0.5rem;
-                color: #0f6fff;
+                color: var(--color-text);
             }
         }
     }
@@ -110,7 +117,7 @@
     width: 100%;
     height: 10%;
     padding: 0.5rem;
-    background-color: #c4d5dc;
+    background-color: var(--color-pagination);
     box-shadow: 0 -4px 9px -3px rgba(0,0,0,0.1);
     font-size: 20px;
     text-align: center;
@@ -118,6 +125,9 @@
         padding: 0.25rem 0.5rem;
         text-decoration: none;
         font-weight: 200;
+        &:visited {
+            color: var(--color-text);
+        }
         + a {
             margin-left: 0.5rem;
         }

@@ -1,0 +1,55 @@
+$light-bgColor: "#fff";
+$light-textColor: "#000";
+$light-resultPagination: "#c4d5dc";
+$light-bgToggleColor: "#d4dbe1";
+$light-borderColor: "#000";
+$light-scroll: "#1433cc";
+$light-keyword: "#1433cc";
+$light-marker: "#000";
+$light-listColor: "#fff";
+
+$dark-bgColor: "#171717";
+$dark-textColor: "#fff";
+$dark-resultPagination: "#414141";
+$dark-bgToggleColor: "#6EDC5F";
+$dark-borderColor: "#fff";
+$dark-scroll: "#242739";
+$dark-keyword: "#5b6fd2";
+$dark-marker: "#fff";
+$dark-listColor: "#535353";
+
+$screen-sm: 640px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1280px;
+$screen-2xl: 1536px;
+
+@mixin sm {
+    @media (min-width: $screen-sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: $screen-xl) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: $screen-2xl) {
+        @content;
+    }
+}

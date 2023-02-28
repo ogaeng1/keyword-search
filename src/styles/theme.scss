@@ -1,0 +1,25 @@
+@import "./utils.scss";
+
+html[data-theme="light"] {
+    --color-background: #{$light-bgColor};
+    --color-text: #{$light-textColor};
+    --color-pagination: #{$light-resultPagination};
+    --color-toggleBg: #{$light-bgToggleColor};
+    --color-border: #{$light-borderColor};
+    --color-scroll: #{$light-scroll};
+    --color-keywordColor: #{$light-keyword};
+    --color-marker: #{$light-marker};
+    --color-listColor: #{$light-listColor};
+}
+
+html[data-theme="dark"] {
+    --color-background: #{$dark-bgColor};
+    --color-text: #{$dark-textColor};
+    --color-pagination: #{$dark-resultPagination};
+    --color-toggleBg: #{$dark-bgToggleColor};
+    --color-border: #{$dark-borderColor};
+    --color-scroll: #{$dark-scroll};
+    --color-keywordColor: #{$dark-keyword};
+    --color-marker: #{$dark-marker};
+    --color-listColor: #{$dark-listColor};
+}
