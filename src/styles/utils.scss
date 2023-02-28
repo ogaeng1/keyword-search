@@ -18,17 +18,10 @@ $dark-keyword: "#5b6fd2";
 $dark-marker: "#fff";
 $dark-listColor: "#535353";
 
-$screen-sm: 640px;
 $screen-md: 768px;
 $screen-lg: 1024px;
 $screen-xl: 1280px;
 $screen-2xl: 1536px;
-
-@mixin sm {
-    @media (min-width: $screen-sm) {
-        @content;
-    }
-}
 
 @mixin md {
     @media (min-width: $screen-md) {
