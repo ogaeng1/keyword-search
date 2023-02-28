@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { searchProps } from './Search';
-import ModeToggle from './ModeToggle';
 import "../styles/map.scss";
 
 declare global {
